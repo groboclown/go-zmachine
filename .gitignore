@@ -2,6 +2,7 @@
 # https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
 #
 # Binaries for programs and plugins
+/dist/
 *.exe
 *.exe~
 *.dll
@@ -17,9 +18,18 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
+# Debugging files
+__debug*
+
 # Go workspace file
 go.work
 go.work.sum
 
 # env file
 .env
+
+# Local working files
+/local*
+/local*/
+/*.code-workspace
+local-*
